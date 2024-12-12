@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-9373a8b18e101cbad71d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "senderFunc",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "senderFunc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-senderFunc-Debug-8a8b5ae9db65d6ee4ec6.json",
+					"name" : "senderFunc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "senderFunc_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-senderFunc_autogen-Debug-42d75b6dee8607863641.json",
+					"name" : "senderFunc_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "senderFunc_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-senderFunc_autogen_timestamp_deps-Debug-f1f09b292f31ca0814b6.json",
+					"name" : "senderFunc_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/MyData/MyTutorials/TutorialsPlayground/qt_tutorials/03_Casting/senderFunc/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug",
+		"source" : "C:/MyData/MyTutorials/TutorialsPlayground/qt_tutorials/03_Casting/senderFunc"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

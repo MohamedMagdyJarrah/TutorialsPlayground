@@ -1,0 +1,25 @@
+# ninja log v6
+10	844	7556334512324332	timerTest_autogen/timestamp	2b363e8483ca9b01
+10	844	7556334512324332	timerTest_autogen/mocs_compilation.cpp	2b363e8483ca9b01
+10	844	7556334512324332	C:/MyData/MyTutorials/TutorialsPlayground/qt_tutorials/01_TimerTest/timerTest/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/timerTest_autogen/timestamp	2b363e8483ca9b01
+10	844	7556334512324332	C:/MyData/MyTutorials/TutorialsPlayground/qt_tutorials/01_TimerTest/timerTest/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/timerTest_autogen/mocs_compilation.cpp	2b363e8483ca9b01
+858	3080	7556334513188678	CMakeFiles/timerTest.dir/main.cpp.obj	89018f0357cc270f
+849	3095	7556334513088777	CMakeFiles/timerTest.dir/timerTest_autogen/mocs_compilation.cpp.obj	ed718183d24c1df1
+866	3118	7556334513268569	CMakeFiles/timerTest.dir/test.cpp.obj	cacb30294ec99acd
+3118	3314	7556334535750618	timerTest.exe	f6c91a90f99f5a2a
+19	1030	7556338210957174	timerTest_autogen/timestamp	2b363e8483ca9b01
+19	1030	7556338210957174	timerTest_autogen/mocs_compilation.cpp	2b363e8483ca9b01
+19	1030	7556338210957174	C:/MyData/MyTutorials/TutorialsPlayground/qt_tutorials/01_TimerTest/timerTest/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/timerTest_autogen/timestamp	2b363e8483ca9b01
+19	1030	7556338210957174	C:/MyData/MyTutorials/TutorialsPlayground/qt_tutorials/01_TimerTest/timerTest/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/timerTest_autogen/mocs_compilation.cpp	2b363e8483ca9b01
+1055	4054	7556338212282523	CMakeFiles/timerTest.dir/test.cpp.obj	cacb30294ec99acd
+1045	4057	7556338212182522	CMakeFiles/timerTest.dir/main.cpp.obj	89018f0357cc270f
+1032	4075	7556338212052437	CMakeFiles/timerTest.dir/timerTest_autogen/mocs_compilation.cpp.obj	ed718183d24c1df1
+4075	4261	7556338242479866	timerTest.exe	f6c91a90f99f5a2a
+17	814	7556341851170454	timerTest_autogen/timestamp	2b363e8483ca9b01
+17	814	7556341851170454	timerTest_autogen/mocs_compilation.cpp	2b363e8483ca9b01
+17	814	7556341851170454	C:/MyData/MyTutorials/TutorialsPlayground/qt_tutorials/01_TimerTest/timerTest/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/timerTest_autogen/timestamp	2b363e8483ca9b01
+17	814	7556341851170454	C:/MyData/MyTutorials/TutorialsPlayground/qt_tutorials/01_TimerTest/timerTest/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/timerTest_autogen/mocs_compilation.cpp	2b363e8483ca9b01
+822	2782	7556341852040911	CMakeFiles/timerTest.dir/main.cpp.obj	89018f0357cc270f
+815	2785	7556341851978381	CMakeFiles/timerTest.dir/timerTest_autogen/mocs_compilation.cpp.obj	ed718183d24c1df1
+829	2817	7556341852110904	CMakeFiles/timerTest.dir/test.cpp.obj	cacb30294ec99acd
+2817	2974	7556341871995968	timerTest.exe	f6c91a90f99f5a2a

@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-e55adfcef3eb40c51f56.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ConnectionTest",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ConnectionTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ConnectionTest-Debug-b80806fbf3c9f3636790.json",
+					"name" : "ConnectionTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ConnectionTest_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ConnectionTest_autogen-Debug-999dbafda693e20a11f9.json",
+					"name" : "ConnectionTest_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ConnectionTest_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ConnectionTest_autogen_timestamp_deps-Debug-159ac4bebf9dd593dc0f.json",
+					"name" : "ConnectionTest_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/MyData/MyTutorials/TutorialsPlayground/qt_tutorials/02_Connections/ConnectionTest/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug",
+		"source" : "C:/MyData/MyTutorials/TutorialsPlayground/qt_tutorials/02_Connections/ConnectionTest"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
