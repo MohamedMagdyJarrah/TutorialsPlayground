@@ -9,11 +9,14 @@
 class Movies
 {
 private:
-    std::vector<Movie> m_vMovies;
+    std::vector<Movie> *m_vMovies;
     int isMovieInTheList(std::string movieName);
 
 public:
     Movies();
+    Movies(std::vector<Movie> &moviesList);
+    Movies(const Movies& source);
+    Movies(Movies&& source) noexcept;
     ~Movies();
     void addMovie(std::string movieName, std::string movieRate, int watchedTimes);
     void displayMovies();

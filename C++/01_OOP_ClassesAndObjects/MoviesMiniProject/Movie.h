@@ -16,13 +16,13 @@ public:
     Movie(const Movie& source);
     ~Movie();
     void setMovieName(std::string name) {this->m_movieName = name;}
-    std::string getMovieName() {return m_movieName;}
+    std::string getMovieName() const {return m_movieName;}
     void setMovieRate(std::string rate) {this->m_movieRate = rate;}
-    std::string getMovieRate() {return m_movieRate;}
+    std::string getMovieRate() const {return m_movieRate;}
     void setWatchedTimes(int watched) {this->m_watchingTimes = watched;}
-    int getWatchedTimes() {return m_watchingTimes;}
+    int getWatchedTimes() const {return m_watchingTimes;}
     void incrementWatchedMovie() {m_watchingTimes++;}
-    void displayMovie();
+    void displayMovie() const;
 };
 
 #endif // !_MOVIE_H

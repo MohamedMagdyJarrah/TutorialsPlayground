@@ -9,6 +9,6 @@ Movie::Movie(const Movie& source) : Movie{source.m_movieName, source.m_movieRate
 
 Movie::~Movie(){}
 
-void Movie::displayMovie(){
-    std::cout << m_movieName << " with Rate: " << m_movieRate << " and watched " << m_watchingTimes << "time." << std::endl;
+void Movie::displayMovie() const {
+    std::cout << m_movieName << " with Rate: " << m_movieRate << " and watched " << m_watchingTimes << " time." << std::endl;
 }
