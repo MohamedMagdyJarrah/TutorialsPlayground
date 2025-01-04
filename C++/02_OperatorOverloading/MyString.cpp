@@ -4,7 +4,7 @@ MyString::MyString()
 {
     m_str = new char[1];
     *m_str = '\0';
-    std::cout << "Constructor is called" << std::endl;
+    // std::cout << "Constructor is called" << std::endl;
 }
 
 MyString::MyString(const char* s) : m_str(nullptr)
@@ -16,18 +16,18 @@ MyString::MyString(const char* s) : m_str(nullptr)
         m_str = new char[std::strlen(s) + 1];  // Length of string received plus one for nullptr
         std::strcpy(m_str,s);       // Copy the received string in new allocated memory
     }
-    std::cout << "Overloaded constructor is called" << std::endl;
+    // std::cout << "Overloaded constructor is called" << std::endl;
 }
 
 MyString::MyString(MyString&& source) : m_str{source.m_str}
 {
     source.m_str = nullptr;
-    std::cout << "Move constructor is called" << std::endl;
+    // std::cout << "Move constructor is called" << std::endl;
 }
 
 MyString::MyString(const MyString& source) : MyString(source.m_str)
 {
-    std::cout << "Copy constructor is called" << std::endl;
+    // std::cout << "Copy constructor is called" << std::endl;
 }
 
 MyString::~MyString()
@@ -36,7 +36,7 @@ MyString::~MyString()
 }
 
 MyString& MyString::operator=(const MyString& rhs){
-    std::cout << "Copy assignment is called" << std::endl;
+    // std::cout << "Copy assignment is called" << std::endl;
     if(&rhs == this){
         return *this;
     } else {
@@ -48,7 +48,7 @@ MyString& MyString::operator=(const MyString& rhs){
 }
 
 MyString& MyString::operator=(MyString&& rhs){
-    std::cout << "Move assignment is called" << std::endl;
+    // std::cout << "Move assignment is called" << std::endl;
     if(this == &rhs){
         return *this;
     }
@@ -150,4 +150,49 @@ std::istream &operator>>(std::istream &is, MyString& obj){
     obj = MyString{buff};
     delete [] buff;
     return is;
+}
+
+bool MyString::operator!=(const MyString& rhs){
+    return !(*this == rhs);
+}
+    
+bool MyString::operator>(const MyString& rhs){
+    return (std::strcmp(this->m_str,rhs.m_str) > 0);
+}
+    
+bool MyString::operator<(const MyString& rhs){
+    return !(*this > rhs);
+}
+
+MyString& MyString::operator+=(const MyString& rhs){
+    *this = *this + rhs;
+    return *this;
+}
+
+MyString MyString::operator*(unsigned int multiplier){
+    char* buff = new char[ (std::strlen(this->m_str) * multiplier) + 1 ];
+    std::strcpy(buff,this->m_str);
+    for(size_t i = 0 ; i < multiplier-1 ; i++){
+        std::strcat(buff,this->m_str);
+    }
+    MyString temp{buff};
+    delete [] buff;
+    return temp;
+}
+
+MyString& MyString::operator*=(unsigned int multiplier){
+    *this = *this * multiplier;
+    return *this;
+}
+
+MyString& MyString::operator++(){
+    for(size_t i = 0 ; i < std::strlen(this->m_str) ; i++){
+        this->m_str[i] = std::toupper(this->m_str[i]);
+    }
+    return *this;
+}
+MyString MyString::operator++(int){
+    MyString temp{this->m_str};
+    this->operator++();
+    return temp;
 }

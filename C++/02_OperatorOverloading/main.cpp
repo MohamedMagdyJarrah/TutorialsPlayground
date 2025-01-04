@@ -3,80 +3,62 @@
 
 int main(){
 
-    // ====================== Creating MyString Class ====================== 
-    // MyString empty;
-    // MyString greeting{"Hello Garrah"};
-    // MyString copyEmpty{empty};
-    // MyString copyGreeting{greeting};
+    std::cout << std::boolalpha << std::endl;
+    MyString a {"frank"};
+    MyString b {"frank"};
 
-    // empty.display();
-    // greeting.display();
-    // copyEmpty.display();
-    // copyGreeting.display();
-
-
-    // ====================== Assignment Operator Overloading ======================
-    // MyString source{"source"}; // Argument Constructed
-    // MyString destination; // Empty Constructed
-
-    // std::cout << "Destination before copy assignment:" << std::endl;
-    // destination.display();
-    // destination = source;   // Copy assignment will be used here
-    // std::cout << "Destination after copy assignment:" << std::endl;
-    // destination.display();
-
-    // std::cout << std::endl;
-
-    // MyString a{"Ahmed"};
-    // MyString b;
-    // MyString c;
-
-    // std::cout << "b before move assignment:" << std::endl;
-    // b.display();
-    // b = MyString{"Hello"};   // Move assignment will be used here
-    // std::cout << "b after move assignment:" << std::endl;
-    // b.display();
-
-    // std::cout << std::endl;
-
-    // std::cout << "c before move assignment:" << std::endl;
-    // c.display();
-    // c = "Bye";   // Move assignment will be used here
-    // std::cout << "c after move assignment:" << std::endl;
-    // c.display();
+    std::cout << (a==b) << std::endl;         // true
+    std::cout << (a!=b) << std::endl;          // false
     
-    // ====================== Binary and Unary Operators Overloading ======================
-    MyString mohamed{"MOHAMED"};
-    std::cout << "mohamed before unary (-) operator" << std::endl;
-    mohamed.display();
-    std::cout << "mohamed after unary (-) operator" << std::endl;
-    mohamed = -mohamed;
-    mohamed.display();
+    b = "george";
+    std::cout << (a==b) << std::endl;         // false
+    std::cout << (a!=b) << std::endl;          // true
+    std::cout << (a<b) << std::endl;          // true
+    std::cout << (a>b) << std::endl;           // false
+    
+    MyString s1 {"FRANK"};
+    s1 = -s1;       
+    std::cout << s1 << std::endl;               // frank              
 
-    std::cout << std::endl;
+    s1 = s1 + "*****";
+    std::cout << s1 << std::endl;               // frank*****       
+    
+    
+    s1 += "-----";                        // frank*****-----
+    std::cout << s1 << std::endl;
+    
+    MyString s2{"12345/"};
+    s1 = s2 * 3;
+    std::cout << s1 << std::endl;              // 12345/12345/12345/
+    
+    MyString s3{"abcdef/"};  
+    s3 *= 5;
+    std::cout << s3 << std::endl;             // abcdef/abcdef/abcdef/abcdef/abcdef/
+    
+    
+    MyString s = "Frank";
+    ++s;
+    std::cout << s << std::endl;                  // FRANK
+    
+    s = -s; 
+    std::cout << s << std::endl;                  // frank
+    
+    MyString result;
+    result = ++s;                           
+    std::cout << s << std::endl;                  // FRANK
+    std::cout << result << std::endl;           // FRANK
+    
+    s = "Frank";
+    s++;
+    std::cout << s << std::endl;                  // FRANK
+    
+    s = -s;
+    std::cout << s << std::endl;                  // frank
+    result = s++;
+    std::cout << s << std::endl;                  // FRANK
+    std::cout << result << std::endl;           // frank
+    
 
-    MyString myFullName;
-    MyString garrah{"garrah"};
-    myFullName = mohamed + garrah;
-    myFullName.display();
-
-    std::cout << std::endl;
-
-    myFullName = " ";
-    myFullName = mohamed + " " + garrah;
-    myFullName.display();
-
-    std::cout << std::endl;
-    std::cout << "Comparing operator result: " << (mohamed == garrah) << std::endl;
-    std::cout << "Comparing operator result: " << (mohamed == mohamed) << std::endl;
-
-    std::cout << std::endl;
-    std::cout << ">> Testing Instertion operator overloading" << std::endl;
-    MyString firstName{"Mohamed"}; 
-    MyString lastName;
-    std::cout << "Enter you last name to print it with you first name ( "<< firstName << " ): " << std::endl;
-    std::cin >> lastName;
-    std::cout << "Hello, " << firstName << " " << lastName;
 
     return 0;
 }

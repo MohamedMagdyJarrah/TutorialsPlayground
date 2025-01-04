@@ -27,10 +27,17 @@ public:
     // =================================== Operator Overloading Implemented as member methods ===================================
     // MyString operator+(const MyString& rhs) const;   // summation with l-value (concatenate)
     // MyString operator+(MyString&& rhs);   // summation with r-value
-
     // MyString operator-() const;   // unary - operation (make lowercase)
-
     // bool operator==(const MyString& rhs) const; // Comparison Operator
+
+    bool operator!=(const MyString& rhs);
+    bool operator>(const MyString& rhs);
+    bool operator<(const MyString& rhs);
+    MyString& operator+=(const MyString& rhs);
+    MyString operator*(unsigned int multiplier);
+    MyString& operator*=(unsigned int multiplier);
+    MyString& operator++();
+    MyString operator++(int);
 
     const char* getSrting();
     int getLength();
